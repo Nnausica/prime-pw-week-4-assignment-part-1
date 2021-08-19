@@ -15,7 +15,7 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 
-let name = prompt ('What is your first name');//define outside the function or it will never show up??
+let name = prompt ('What is your first name');
 
 function helloName( name ) {
   let greeting = ('Hello ' + name);
@@ -30,16 +30,39 @@ console.log(helloName(name))
 // Remember to call the function to test
 
 
+
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber) {
+  let answer = (firstNumber + secondNumber);
+  return answer
   // return firstNumber + secondNumber;
 }
 
+console.log ('addnumbers', addNumbers( 2,4))
+
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( num1, num2, num3){
+  let multiplicaiton = (num1 * num2 * num3)
+  return multiplicaiton
 }
+console.log ("mulitplication equals", multiplyThree( 2, 4, 5))
+
+
+function timesThree( ){
+
+  //want to create a loop to ask for 3 numbers
+   let myNums = []
+  for (let i=0; i<3;i++){
+    let num= prompt ('give me a number to multiply');
+    myNums.push(num);
+  }//end for loop
+
+  let multithree = (myNums[0]*myNums[1]*myNums[2]); //take three numbers given and multiply them
+  return multithree 
+} //end function timesThree
+
+console.log ("multi equals", timesThree())
 
 
 // 5. Function that will return true if a number is positive, 
