@@ -14,9 +14,19 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
+
+let name = prompt ('What is your first name');//define outside the function or it will never show up??
+
 function helloName( name ) {
-  return;
-}
+  let greeting = ('Hello ' + name);
+  return greeting;
+}//end helloName
+
+console.log(helloName(name))
+
+
+
+
 // Remember to call the function to test
 
 
