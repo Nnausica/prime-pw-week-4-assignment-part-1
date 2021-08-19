@@ -37,9 +37,7 @@ function addNumbers( firstNumber, secondNumber) {
   return answer
   // return firstNumber + secondNumber;
 }
-
 console.log ('addnumbers', addNumbers( 2,4))
-
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num1, num2, num3){
@@ -49,9 +47,10 @@ function multiplyThree( num1, num2, num3){
 console.log ("mulitplication equals", multiplyThree( 2, 4, 5))
 
 
-function timesThree( ){
+//tried Q4 again but with an array and a loop just to see if I could...
 
-  //want to create a loop to ask for 3 numbers
+function timesThree( ){
+  //create a loop to ask for 3 numbers
    let myNums = []
   for (let i=0; i<3;i++){
     let num= prompt ('give me a number to multiply');
@@ -67,12 +66,20 @@ console.log ("multi equals", timesThree())
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+
+let number= prompt('give me a number')
+
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
-  }
-    return;
+    // console.log('true'); I dont need this, duplicative
+    return true;}
+  else ( number <= 0 );{
+    // console.log('false'); I dont need this, duplicative
+    return false;
+     }//end if else
 }
+console.log("is the number positive?", isPositive())
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
