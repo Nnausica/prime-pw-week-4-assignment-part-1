@@ -67,18 +67,15 @@ console.log ("multi equals", timesThree())
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 
-let number= prompt('give me a number')
 
 function isPositive( number ) {
   if ( number > 0 ){
-    // console.log('true'); I dont need this, duplicative
     return true;}
   else ( number <= 0 );{
-    // console.log('false'); I dont need this, duplicative
     return false;
      }//end if else
-}
-console.log("is the number positive?", isPositive())
+};
+// console.log("is the number positive?", isPositive())
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -89,9 +86,20 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+
+let array=[0]
+
 function getLast( array ) {
 
-}
+  let lastThing = array[array.length-1];
+
+  if ( array.length > 0){console.log('the value of the last item is:', lastThing)}
+  else { console.log('undefined')};
+  
+};//end function
+
+console.log(getLast(array));
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
