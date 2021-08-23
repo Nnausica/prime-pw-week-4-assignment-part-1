@@ -138,11 +138,17 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 // // 9. Function to return the sum of all numbers in an array
 let loopyArray = [2,3,4,5,6]
 
+// TODO: loop to add items
 function sumAll( ) {
   let sum = 0
-  // TODO: loop to add items
-  return sum;
+  for( i=0; i<loopyArray.length; i++) {
+    sum +=loopyArray[i];
+  }
+
+  return sum; //why isn't this changing. loggin the top number? for loop not working...
 };
+
+console.log(sumAll());
 
 // // 10. Function to return a new array of all positive (greater than zero)
 // //     numbers contained in an input array. If there are no positive numbers
